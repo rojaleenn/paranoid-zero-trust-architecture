@@ -1,1 +1,17 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Logs
+*.log
+
+# Temp files
+*.save
+*.zip
 awscliv2.zip
