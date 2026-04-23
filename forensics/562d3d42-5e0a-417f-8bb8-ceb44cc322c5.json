@@ -1,0 +1,19 @@
+{"timestamp": "2026-04-12T01:12:05.978947", "event": "Slow lurk \u2014 drift 5.0s"}
+{"timestamp": "2026-04-12T01:12:05.979141", "event": "\u26d4 ISOLATED \u2014 Slow lurk drift 5.0s"}
+{"timestamp": "2026-04-12T01:12:05.980748", "event": "\u26d4 Permanently isolated \u2014 no recovery possible"}
+{"timestamp": "2026-04-13T05:22:49.912169", "event": "Replay attack \u2014 5 heartbeats in 10s"}
+{"timestamp": "2026-04-13T05:22:50.099872", "event": "\u26d4 Auto isolated \u2014 replay attack detected at gateway"}
+{"timestamp": "2026-04-13T05:22:50.632174", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:51.159460", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:51.693716", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:52.226835", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:52.757595", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:53.287693", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:53.817065", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:54.345720", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:54.872945", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:55.406141", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:55.934195", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:22:56.460341", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-13T05:23:08.750858", "event": "Dead node \u2014 silent 19.3s"}
+{"timestamp": "2026-04-13T05:23:08.750967", "event": "\u26d4 ISOLATED \u2014 Dead \u2014 19.3s silence"}

@@ -1,0 +1,3 @@
+{"timestamp": "2026-04-11T15:29:50.695592", "event": "Slow lurk detected \u2014 interval drifted by 5.0s"}
+{"timestamp": "2026-04-11T15:29:50.695763", "event": "\u26d4 ISOLATED \u2014 Slow lurk attack \u2014 drift 5.0s"}
+{"timestamp": "2026-04-11T15:29:50.697550", "event": "\u26d4 Node permanently isolated \u2014 no recovery possible"}

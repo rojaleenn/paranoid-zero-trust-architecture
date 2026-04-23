@@ -1,0 +1,40 @@
+{"timestamp": "2026-04-17T05:08:59.615909", "event": "Replay attack \u2014 5 heartbeats in 10s"}
+{"timestamp": "2026-04-17T05:08:59.807384", "event": "\u26d4 Auto isolated \u2014 replay attack detected at gateway"}
+{"timestamp": "2026-04-17T05:09:00.339495", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:00.871166", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:01.405636", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:01.933614", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:02.466466", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:02.994675", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:03.529796", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:04.059545", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:04.589490", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:05.121452", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:05.652927", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:06.181201", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:06.708651", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:07.235486", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:07.768010", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:08.295337", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:08.828091", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:09.355919", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:09.890767", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:10.418534", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:10.946307", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:11.478688", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:12.005781", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:12.539830", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:13.071369", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:13.602160", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:14.128871", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:14.658577", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:15.189181", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:15.720315", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:15.755620", "event": "Dead node \u2014 silent 16.6s"}
+{"timestamp": "2026-04-17T05:09:15.755742", "event": "\u26d4 ISOLATED \u2014 Dead \u2014 16.6s silence"}
+{"timestamp": "2026-04-17T05:09:16.253331", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:16.780471", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:17.319004", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:17.850038", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:18.384087", "event": "Blocked \u2014 permanently isolated"}
+{"timestamp": "2026-04-17T05:09:18.912559", "event": "Blocked \u2014 permanently isolated"}

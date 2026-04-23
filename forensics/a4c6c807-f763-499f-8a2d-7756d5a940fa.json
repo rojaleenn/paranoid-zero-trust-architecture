@@ -1,0 +1,4 @@
+{"timestamp": "2026-04-12T12:32:52.700734", "event": "Replay attack \u2014 5 heartbeats in 10s"}
+{"timestamp": "2026-04-12T12:32:52.791370", "event": "\u26d4 Auto isolated \u2014 replay attack detected at gateway"}
+{"timestamp": "2026-04-12T12:33:06.163641", "event": "Dead node \u2014 silent 15.5s"}
+{"timestamp": "2026-04-12T12:33:06.163755", "event": "\u26d4 ISOLATED \u2014 Dead \u2014 15.5s silence"}

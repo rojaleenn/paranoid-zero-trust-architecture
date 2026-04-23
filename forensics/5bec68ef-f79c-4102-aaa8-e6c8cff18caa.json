@@ -1,0 +1,62 @@
+{"timestamp": "2026-04-10T07:01:38.557332", "event": "Heartbeat delayed by 13.2s"}
+{"timestamp": "2026-04-10T07:01:38.557551", "event": "Node isolated due to suspicious activity"}
+{"timestamp": "2026-04-10T07:01:43.561455", "event": "Heartbeat delayed by 18.2s"}
+{"timestamp": "2026-04-10T07:01:48.564831", "event": "Heartbeat delayed by 23.2s"}
+{"timestamp": "2026-04-10T07:01:53.568922", "event": "Heartbeat delayed by 28.2s"}
+{"timestamp": "2026-04-10T07:01:58.572961", "event": "Heartbeat delayed by 33.3s"}
+{"timestamp": "2026-04-10T07:02:03.576869", "event": "Heartbeat delayed by 38.3s"}
+{"timestamp": "2026-04-10T07:02:08.580772", "event": "Heartbeat delayed by 43.3s"}
+{"timestamp": "2026-04-10T07:02:13.584774", "event": "Heartbeat delayed by 48.3s"}
+{"timestamp": "2026-04-10T07:02:18.588694", "event": "Heartbeat delayed by 53.3s"}
+{"timestamp": "2026-04-10T07:02:23.592431", "event": "Heartbeat delayed by 58.3s"}
+{"timestamp": "2026-04-10T07:02:28.596332", "event": "Heartbeat delayed by 63.3s"}
+{"timestamp": "2026-04-10T07:02:33.600191", "event": "Heartbeat delayed by 68.3s"}
+{"timestamp": "2026-04-10T07:02:38.604137", "event": "Heartbeat delayed by 73.3s"}
+{"timestamp": "2026-04-10T07:02:43.607882", "event": "Heartbeat delayed by 78.3s"}
+{"timestamp": "2026-04-10T07:02:48.611562", "event": "Heartbeat delayed by 83.3s"}
+{"timestamp": "2026-04-10T07:02:53.615349", "event": "Heartbeat delayed by 88.3s"}
+{"timestamp": "2026-04-10T07:02:58.619147", "event": "Heartbeat delayed by 93.3s"}
+{"timestamp": "2026-04-10T07:03:03.622950", "event": "Heartbeat delayed by 98.3s"}
+{"timestamp": "2026-04-10T07:03:08.626521", "event": "Heartbeat delayed by 103.3s"}
+{"timestamp": "2026-04-10T07:03:13.630529", "event": "Heartbeat delayed by 108.3s"}
+{"timestamp": "2026-04-10T07:03:18.634541", "event": "Heartbeat delayed by 113.3s"}
+{"timestamp": "2026-04-10T07:03:23.638536", "event": "Heartbeat delayed by 118.3s"}
+{"timestamp": "2026-04-10T07:03:28.642545", "event": "Heartbeat delayed by 123.3s"}
+{"timestamp": "2026-04-10T07:03:33.646581", "event": "Heartbeat delayed by 128.3s"}
+{"timestamp": "2026-04-10T07:03:38.650476", "event": "Heartbeat delayed by 133.3s"}
+{"timestamp": "2026-04-10T07:03:43.654436", "event": "Heartbeat delayed by 138.3s"}
+{"timestamp": "2026-04-10T07:03:48.658507", "event": "Heartbeat delayed by 143.3s"}
+{"timestamp": "2026-04-10T07:03:53.662576", "event": "Heartbeat delayed by 148.3s"}
+{"timestamp": "2026-04-10T07:03:58.666504", "event": "Heartbeat delayed by 153.3s"}
+{"timestamp": "2026-04-10T07:04:03.670541", "event": "Heartbeat delayed by 158.3s"}
+{"timestamp": "2026-04-10T07:04:08.674786", "event": "Heartbeat delayed by 163.4s"}
+{"timestamp": "2026-04-10T07:04:13.678779", "event": "Heartbeat delayed by 168.4s"}
+{"timestamp": "2026-04-10T07:04:18.682835", "event": "Heartbeat delayed by 173.4s"}
+{"timestamp": "2026-04-10T07:04:23.686515", "event": "Heartbeat delayed by 178.4s"}
+{"timestamp": "2026-04-10T07:08:36.734295", "event": "Heartbeat delayed by 431.4s"}
+{"timestamp": "2026-04-10T07:08:36.734399", "event": "Node isolated due to suspicious activity"}
+{"timestamp": "2026-04-10T07:08:41.738322", "event": "Heartbeat delayed by 436.4s"}
+{"timestamp": "2026-04-10T07:08:46.742204", "event": "Heartbeat delayed by 441.4s"}
+{"timestamp": "2026-04-10T07:08:51.746026", "event": "Heartbeat delayed by 446.4s"}
+{"timestamp": "2026-04-10T07:08:56.750023", "event": "Heartbeat delayed by 451.4s"}
+{"timestamp": "2026-04-10T07:09:01.754028", "event": "Heartbeat delayed by 456.4s"}
+{"timestamp": "2026-04-10T07:09:06.757994", "event": "Heartbeat delayed by 461.4s"}
+{"timestamp": "2026-04-10T07:09:11.761966", "event": "Heartbeat delayed by 466.4s"}
+{"timestamp": "2026-04-10T07:09:16.766119", "event": "Heartbeat delayed by 471.4s"}
+{"timestamp": "2026-04-10T07:09:21.769957", "event": "Heartbeat delayed by 476.4s"}
+{"timestamp": "2026-04-10T07:09:26.773977", "event": "Heartbeat delayed by 481.5s"}
+{"timestamp": "2026-04-10T07:09:31.778241", "event": "Heartbeat delayed by 486.5s"}
+{"timestamp": "2026-04-10T07:09:36.782296", "event": "Heartbeat delayed by 491.5s"}
+{"timestamp": "2026-04-10T07:09:41.786288", "event": "Heartbeat delayed by 496.5s"}
+{"timestamp": "2026-04-10T07:09:46.790193", "event": "Heartbeat delayed by 501.5s"}
+{"timestamp": "2026-04-10T07:09:51.794355", "event": "Heartbeat delayed by 506.5s"}
+{"timestamp": "2026-04-10T07:09:56.798539", "event": "Heartbeat delayed by 511.5s"}
+{"timestamp": "2026-04-10T07:10:01.802390", "event": "Heartbeat delayed by 516.5s"}
+{"timestamp": "2026-04-10T07:10:06.806323", "event": "Heartbeat delayed by 521.5s"}
+{"timestamp": "2026-04-10T07:10:11.810130", "event": "Heartbeat delayed by 526.5s"}
+{"timestamp": "2026-04-10T07:10:16.814355", "event": "Heartbeat delayed by 531.5s"}
+{"timestamp": "2026-04-10T07:10:21.818541", "event": "Heartbeat delayed by 536.5s"}
+{"timestamp": "2026-04-10T07:10:26.822680", "event": "Heartbeat delayed by 541.5s"}
+{"timestamp": "2026-04-12T01:11:00.894576", "event": "Slow lurk \u2014 drift 5.0s"}
+{"timestamp": "2026-04-12T01:11:00.895390", "event": "\u26d4 ISOLATED \u2014 Slow lurk drift 5.0s"}
+{"timestamp": "2026-04-12T01:11:00.897142", "event": "\u26d4 Permanently isolated \u2014 no recovery possible"}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paranoid Zero-Trust Command Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            background: radial-gradient(circle at top, #140021, #050008);
+            color: #e9d5ff;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 25px;
+            color: #c084fc;
+            text-shadow: 0 0 15px #9333ea;
+        }
+        h2 { font-size: 18px; letter-spacing: 2px; }
+
+        /* ── Dual level banners ── */
+        .level-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 10px auto;
+        }
+        .level-box {
+            background: rgba(20, 0, 40, 0.6);
+            border: 1px solid #7e22ce;
+            border-radius: 10px;
+            padding: 14px 35px;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+        .level-box span {
+            display: block;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 6px;
+        }
+
+        /* ── Stat boxes ── */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 15px auto;
+        }
+        .stat-box {
+            background: rgba(20, 0, 40, 0.6);
+            border: 1px solid #7e22ce;
+            border-radius: 10px;
+            padding: 12px 25px;
+            font-size: 13px;
+        }
+        .stat-box span {
+            display: block;
+            font-size: 28px;
+            color: #c084fc;
+        }
+
+        /* ── Table ── */
+        .container {
+            margin: 25px auto;
+            width: 90%;
+            background: rgba(20, 0, 40, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid #7e22ce;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(147, 51, 234, 0.6);
+            padding: 25px;
+        }
+        table { width: 100%; border-collapse: collapse; }
+        th {
+            background: #1a002e;
+            color: #d8b4fe;
+            padding: 14px;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #3b0764;
+            font-size: 13px;
+        }
+
+        .healthy  { color: #22c55e; }
+        .delayed  { color: #facc15; font-weight: bold; }
+        .isolated { color: #ef4444; font-weight: bold; letter-spacing: 1px; }
+
+        tr.row-isolated td {
+            background: rgba(239, 68, 68, 0.08);
+        }
+
+        /* ── Alert boxes ── */
+        @keyframes blink {
+            0%   { opacity: 1;   }
+            50%  { opacity: 0.4; }
+            100% { opacity: 1;   }
+        }
+        .alert-box {
+            display: none;
+            margin: 15px auto;
+            width: 65%;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 8px;
+            color: #fecaca;
+            animation: blink 1s infinite;
+        }
+        .alert-network {
+            background: #7f1d1d;
+            box-shadow: 0 0 20px red;
+        }
+        .alert-compromised {
+            background: #450a0a;
+            box-shadow: 0 0 25px #dc2626;
+            border: 1px solid #ef4444;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🛡 PARANOID ZERO-TRUST COMMAND CENTER</h1>
+
+<!-- Dual level display -->
+<div class="level-row">
+    <div class="level-box">
+        🌐 Network Threat
+        <span id="networkThreat">LOADING...</span>
+    </div>
+    <div class="level-box">
+        🔐 Security Alert
+        <span id="securityAlert">LOADING...</span>
+    </div>
+</div>
+
+<!-- Stat boxes -->
+<div class="stats">
+    <div class="stat-box">Total Nodes<span id="totalNodes">-</span></div>
+    <div class="stat-box">Healthy<span id="healthyCount" style="color:#22c55e">-</span></div>
+    <div class="stat-box">Delayed<span id="delayedCount" style="color:#facc15">-</span></div>
+    <div class="stat-box">Isolated<span id="isolatedCount" style="color:#ef4444">-</span></div>
+</div>
+
+<!-- Network critical alert -->
+<div id="alertNetwork" class="alert-box alert-network">
+    🚨 CRITICAL NETWORK THREAT — MULTIPLE NODES DOWN 🚨
+</div>
+
+<!-- Compromised alert -->
+<div id="alertCompromised" class="alert-box alert-compromised">
+    ⛔ SECURITY BREACH DETECTED — NODE PERMANENTLY ISOLATED ⛔
+    <div style="font-size:13px; margin-top:8px; color:#fca5a5;">
+        Decommission compromised node and register fresh identity to clear
+    </div>
+</div>
+
+<!-- Node table -->
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Node ID</th>
+                <th>Status</th>
+                <th>Seconds Since Last</th>
+                <th>Isolated At</th>
+            </tr>
+        </thead>
+        <tbody id="nodeTable"></tbody>
+    </table>
+</div>
+
+<script>
+async function loadDashboard() {
+    try {
+        const response = await fetch("/dashboard_data");
+        const fullData = await response.json();
+
+        const data           = fullData.nodes;
+        const networkThreat  = fullData.network_threat;
+        const securityAlert  = fullData.security_alert;
+
+        // ── Network threat level
+        const ntEl = document.getElementById("networkThreat");
+        ntEl.innerText = networkThreat;
+        ntEl.style.color = networkThreat === "LOW"      ? "#22c55e"
+                         : networkThreat === "MEDIUM"   ? "#facc15"
+                         : "#ef4444";
+
+        // ── Security alert level
+        const saEl = document.getElementById("securityAlert");
+        saEl.innerText = securityAlert;
+        saEl.style.color = securityAlert === "CLEAR" ? "#22c55e" : "#ef4444";
+
+        // ── Alert banners
+        document.getElementById("alertNetwork").style.display =
+            networkThreat === "CRITICAL" ? "block" : "none";
+
+        document.getElementById("alertCompromised").style.display =
+            securityAlert === "COMPROMISED" ? "block" : "none";
+
+        // ── Build table
+        let healthy = 0, delayed = 0, isolated = 0;
+        let html = "";
+
+        for (const node in data) {
+            const n        = data[node];
+            const status   = n.status;
+            const seconds  = n.seconds_since_last.toFixed(2);
+            const isolatedAt = n.isolated_at
+                ? n.isolated_at.replace("T", " ").substring(0, 19) + " UTC"
+                : "—";
+
+            if (status === "healthy")  healthy++;
+            if (status === "delayed")  delayed++;
+            if (status === "isolated") isolated++;
+
+            const rowClass = status === "isolated" ? "row-isolated" : "";
+
+            html += `
+            <tr class="${rowClass}">
+                <td title="${node}">${node.substring(0, 8)}...</td>
+                <td class="${status}">${status.toUpperCase()}</td>
+                <td>${seconds}s</td>
+                <td style="font-size:11px; color:#f87171">${isolatedAt}</td>
+            </tr>`;
+        }
+
+        document.getElementById("nodeTable").innerHTML = html ||
+            '<tr><td colspan="4" style="color:#7e22ce;">No nodes registered yet</td></tr>';
+
+        document.getElementById("totalNodes").innerText   = fullData.total_nodes;
+        document.getElementById("healthyCount").innerText  = healthy;
+        document.getElementById("delayedCount").innerText  = delayed;
+        document.getElementById("isolatedCount").innerText = isolated;
+
+    } catch (err) {
+        console.error("Dashboard fetch error:", err);
+    }
+}
+
+setInterval(loadDashboard, 3000);
+loadDashboard();
+</script>
+
+</body>
+</html>

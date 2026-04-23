@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paranoid Zero-Trust Command Center</title>
+
+    <!-- Cyber Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #140021, #050008);
+    color: #e9d5ff;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    margin-top: 25px;
+    color: #c084fc;
+    text-shadow: 0 0 15px #9333ea;
+    letter-spacing: 2px;
+}
+
+/* Glass cyber panel */
+.container {
+    margin: 40px auto;
+    width: 85%;
+    background: rgba(20, 0, 40, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid #7e22ce;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(147,51,234,0.6);
+    padding: 25px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #1a002e;
+    color: #d8b4fe;
+    padding: 14px;
+    border-bottom: 2px solid #9333ea;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #3b0764;
+}
+
+/* Status colors */
+.healthy {
+    color: #22c55e;
+    text-shadow: 0 0 8px #22c55e;
+}
+
+.warning {
+    color: #facc15;
+    text-shadow: 0 0 8px #facc15;
+}
+
+.isolated {
+    color: #ef4444;
+    text-shadow: 0 0 10px #ef4444;
+}
+
+/* Glow animation */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 10px #9333ea; }
+    50% { box-shadow: 0 0 25px #c084fc; }
+    100% { box-shadow: 0 0 10px #9333ea; }
+}
+
+.container {
+    animation: pulseGlow 4s infinite;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #a855f7;
+    opacity: 0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🛡️ PARANOID ZERO-TRUST COMMAND CENTER</h1>
+
+<div class="container">
+
+<table>
+    <thead>
+        <tr>
+            <th>Node ID</th>
+            <th>Status</th>
+            <th>Seconds Since Last Heartbeat</th>
+        </tr>
+    </thead>
+
+    <tbody id="nodeTable"></tbody>
+
+</table>
+
+</div>
+
+<div class="footer">
+    Live Cyber Monitoring • Zero Trust Architecture • Digital Forensics Active
+</div>
+
+<script>
+
+async function loadDashboard() {
+    try {
+        const response = await fetch("/dashboard_data");
+        const data = await response.json();
+
+        const table = document.getElementById("nodeTable");
+        table.innerHTML = "";
+
+        for (const node in data) {
+
+            const row = document.createElement("tr");
+
+            let statusClass = "healthy";
+
+            if (data[node].status === "isolated")
+                statusClass = "isolated";
+            else if (data[node].status !== "healthy")
+                statusClass = "warning";
+
+            row.innerHTML = `
+                <td>${node}</td>
+                <td class="${statusClass}">
+                    ${data[node].status.toUpperCase()}
+                </td>
+                <td>${data[node].seconds_since_last.toFixed(2)}</td>
+            `;
+
+            table.appendChild(row);
+        }
+
+    } catch (err) {
+        console.log("Dashboard fetch error:", err);
+    }
+}
+
+/* Refresh every 3 seconds */
+setInterval(loadDashboard, 3000);
+loadDashboard();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{"timestamp": "2026-04-10T07:09:26.774241", "event": "Heartbeat delayed by 12.3s"}
+{"timestamp": "2026-04-10T07:09:26.774389", "event": "Node isolated due to suspicious activity"}
+{"timestamp": "2026-04-10T07:09:31.778498", "event": "Heartbeat delayed by 17.3s"}
+{"timestamp": "2026-04-10T07:09:36.782551", "event": "Heartbeat delayed by 22.3s"}
+{"timestamp": "2026-04-10T07:09:41.786517", "event": "Heartbeat delayed by 27.3s"}
+{"timestamp": "2026-04-10T07:09:46.790460", "event": "Heartbeat delayed by 32.3s"}
+{"timestamp": "2026-04-10T07:09:51.794621", "event": "Heartbeat delayed by 37.3s"}
+{"timestamp": "2026-04-10T07:09:56.798789", "event": "Heartbeat delayed by 42.4s"}
+{"timestamp": "2026-04-10T07:10:01.802637", "event": "Heartbeat delayed by 47.4s"}
+{"timestamp": "2026-04-10T07:10:06.806555", "event": "Heartbeat delayed by 52.4s"}
+{"timestamp": "2026-04-10T07:10:11.810379", "event": "Heartbeat delayed by 57.4s"}
+{"timestamp": "2026-04-10T07:10:16.814612", "event": "Heartbeat delayed by 62.4s"}
+{"timestamp": "2026-04-10T07:10:21.818842", "event": "Heartbeat delayed by 67.4s"}
+{"timestamp": "2026-04-10T07:10:26.822975", "event": "Heartbeat delayed by 72.4s"}
+{"timestamp": "2026-04-12T00:48:21.124719", "event": "Slow lurk \u2014 drift 5.0s"}
+{"timestamp": "2026-04-12T00:48:21.125665", "event": "\u26d4 ISOLATED \u2014 Slow lurk drift 5.0s"}
+{"timestamp": "2026-04-12T00:48:21.127545", "event": "\u26d4 Permanently isolated \u2014 no recovery possible"}
